@@ -8,7 +8,7 @@ const EIFFEL_TOWER_POSITION = {
 
 class App extends Component {
   componentDidMount() {
-    this.map = window.google.maps.Map(this.refs.map, {
+    this.map = new window.google.maps.Map(this.refs.map, {
       center: EIFFEL_TOWER_POSITION,
       zoom: 16
     });
